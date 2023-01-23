@@ -1,0 +1,7 @@
+require "rails_helper"
+
+RSpec.describe <%= class_name %> do
+  specify "success case" do
+    expect(described_class.new.call<%= params %>).to be_success
+  end
+end

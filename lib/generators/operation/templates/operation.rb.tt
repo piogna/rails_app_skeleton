@@ -1,0 +1,12 @@
+# frozen_string_literal: true
+
+require "dry/monads/result"
+require "dry/matcher/result_matcher"
+
+class <%= class_name %>
+  include Dry::Monads[:result]
+  include Dry::Matcher.for(:call, with: Dry::Matcher::ResultMatcher)
+
+  def call<%= params %>
+  end
+end

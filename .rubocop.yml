@@ -1,0 +1,11 @@
+require:
+  - rubocop-rails
+
+AllCops:
+  Exclude:
+    - config/initializers/content_security_policy.rb
+    - 'bin/{rails,rake,bundle,vite}'
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
